@@ -1,0 +1,155 @@
+/* header  */
+img{
+    max-width: 100%;
+}
+.header{
+    height: 77px;
+}
+.header .logo {
+    width: 190px;
+    margin-top: -61px;
+}
+.h-menu ul{
+    text-align: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #17a2b8;
+}
+.h-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+    border-left:1px solid #1bbad3;
+    border-right:1px solid #148fa1;
+}
+.h-menu ul li:first-child{
+    border-left: none;
+}
+.h-menu ul li:last-child{
+    border-right: none;
+}
+.h-menu ul li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 25px;
+    line-height: 62px;
+    font-size: 18px;  
+}
+.h-menu ul li:hover >a{
+    background: #128597;
+    transition: .5s;
+}
+/* dropdown */
+.h-menu ul li{
+    position: relative;
+}
+.h-menu ul li ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+}
+.h-menu ul li ul li{
+    border-right: none;
+    border-left: none;
+    margin-left: 0;
+    border-top:1px solid #1bbad3; 
+    border-bottom:1px solid #148fa1;
+    display:block;
+}
+.h-menu ul li ul li a{
+    display: block;
+    text-align: center;
+}
+.h-menu ul li:hover> ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+    transition: .5s;
+}
+/* submenu */
+.h-menu ul li ul li{
+    position: relative;
+}
+.h-menu ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    visibility: hidden;
+}
+.banner{
+    background: url(img/download.jpg) no-repeat;
+    background-size: cover;
+    padding: 180px 0;
+}
+.banner p {
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog{
+    background: #ddd;
+}
+.blog p {
+    width: 266px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.blog h5{
+    margin-top: 10px;
+}
+.about .notice ul{
+    list-style: none;
+    margin-right: 5px;
+    border-left: 1px solid #ddd;
+}
+span{
+    background:rgba(0, 0, 255, 0.712);
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+    display: inline-block;   
+}
+.service{
+    background: #767676b6;
+    color: #ddd;
+}
+.form-control{
+    margin-bottom: 8px;
+}
+.contact{
+    background: #ddd;
+}
+.social-menu ul{
+    list-style-type: none;
+}
+.social-menu ul li{
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 0;
+}
+.social-menu ul li a{
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 25px;
+    transition: .5s;
+    margin-top: 10px;
+}   
+.social-menu ul li a:hover{
+    color: purple;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
